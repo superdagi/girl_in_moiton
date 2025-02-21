@@ -1,18 +1,18 @@
 .sprite {
-  width: 64px; /* Width of a single walking frame */
-  height: 96px; /* Height of a single walking frame */
-  background-image: url('girl_sprite.png'); /* Path to your sprite sheet */
+  width: 148px; /* Width of a single walking frame */
+  height: 155px; /* Height of a single walking frame */
+  background-image: url("../sprites/girl/girl_sprite.png"); /* Path to your sprite sheet */
   background-repeat: no-repeat;
   position: absolute;
-  left: 100px; /* Starting position */
+  left: 0px; /* Starting position */
 }
 
 @keyframes walkAnimation {
   100% {
-    background-position: -256px 0; /* Total width of 4 frames (64px * 4 = 256px) */
+    background-position: -1800px 0; /* Total width of 6 frames (158px * 6 = 930px) */
   }
 }
 
 .walking {
-  animation: walkAnimation 1s steps(4) infinite;
+  animation: walkAnimation 1s steps(6) infinite;
 }
